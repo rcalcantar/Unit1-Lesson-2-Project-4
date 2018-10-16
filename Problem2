@@ -1,0 +1,11 @@
+SELECT
+	start_terminal,
+	start_station,
+	COUNT(start_terminal) trips_started
+FROM
+	trips
+GROUP BY
+	start_station,
+	start_terminal
+ORDER BY
+	start_terminal;

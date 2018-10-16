@@ -1,0 +1,9 @@
+SELECT
+	start_station,
+	MIN(duration) shortest_trip
+FROM
+	trips
+GROUP BY
+	1
+ORDER BY
+	shortest_trip;
